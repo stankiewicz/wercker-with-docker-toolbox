@@ -14,7 +14,6 @@ script: |
   sudo apt-get install linux-image-extra-`uname -r`
   sudo apt-get install docker-engine
   sudo usermod -aG docker ubuntu
-  sudo service docker restart
   unset DOCKER_HOST
   sudo docker version
   sudo docker info
