@@ -2,6 +2,7 @@ name: dockered
 version: 0.1.1
 description: Ubuntu 14.04
 type: main
+inherits: wercker/ubuntu12.04-webessentials@0.0.3
 platform: ubuntu@12.04
 no-response-timeout: 10
 script: |
