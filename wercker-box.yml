@@ -15,8 +15,8 @@ script: |
       unzip machine.zip && \
       rm machine.zip && \
       mv docker-machine* /usr/local/bin
-  docker version
   eval "$(docker-machine env default)"
+  docker version
   docker info
   docker run hello-world
   
