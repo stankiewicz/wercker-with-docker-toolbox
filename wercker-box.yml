@@ -10,6 +10,7 @@ script: |
   echo "deb http://apt.dockerproject.org/repo ubuntu-precise main" | sudo tee  /etc/apt/sources.list.d/docker.list
   sudo apt-get update
   sudo apt-get install docker-engine
+  sudo apt-get install unzip
   sudo usermod -aG docker ubuntu
   curl -L https://github.com/docker/machine/releases/download/v0.5.0/docker-machine_linux-amd64.zip >machine.zip && unzip machine.zip && rm machine.zip && mv docker-machine* /usr/local/bin
   eval "$(docker-machine env default)"
