@@ -1,0 +1,16 @@
+name : docker-toolbox
+version : 1.0
+inherits : wercker/ubuntu12.04-webessentials@1.0.4
+type : main
+platform : ubuntu@12.04
+packages :
+  - nodejs@0.10.38
+keywords:
+  - docker
+script: |
+  sudo apt-get update
+  sudo apt-get install docker-engine
+  sudo service docker start
+  sudo docker run hello-world
+  docker version
+  docker info
