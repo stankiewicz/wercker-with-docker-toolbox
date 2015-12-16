@@ -14,3 +14,4 @@ script: |
   sudo docker run hello-world
   docker version
   docker info
+
