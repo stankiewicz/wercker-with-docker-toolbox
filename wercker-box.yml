@@ -1,4 +1,4 @@
-name: ubuntu14.04 dockered
+name: dockered
 version: 0.1.1
 description: Ubuntu 14.04
 type: main
